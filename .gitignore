@@ -1,0 +1,30 @@
+# release assets (published on GitHub Releases, not in git)
+*.zip
+*.zip.0*
+dist/
+parts/
+# python
+venv/
+.venv/
+__pycache__/
+*.pyc
+# key pipeline working data (game data, decrypted files, outputs)
+dec/
+out/
+work/
+iso/
+pack/
+# built helpers
+*.so
+tools/keys/src/pgddec
+# model weights and generated images
+*.pth
+*.safetensors
+*.png
+tools/upscale/compare/out/
+tools/upscale/compare/_contact/
+tools/upscale/compare/index.html
+tools/upscale/compare/metrics.csv
+tools/upscale/validation/index.json
+tools/upscale/validation/e2e/
+tools/upscale/validation/*.csv
