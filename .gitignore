@@ -28,3 +28,6 @@ tools/upscale/compare/metrics.csv
 tools/upscale/validation/index.json
 tools/upscale/validation/e2e/
 tools/upscale/validation/*.csv
+
+# private drafts
+forum/msg-efonte.txt
