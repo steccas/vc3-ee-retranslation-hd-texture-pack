@@ -1,9 +1,12 @@
 # Valkyria Chronicles 3 Extra Edition: English ReTranslation-ready AI upscaled texture pack (PPSSPP)
 
 A version of **efonte's AI upscaled texture pack** for *Valkyria Chronicles 3 Extra Edition*
-(ULJM05957) that works with the **English ReTranslation** by akorov. efonte's pack
+(ULJM05957) that works with the **[English ReTranslation](https://github.com/akorov/VC3ReTranslation)** by akorov. efonte's pack
 ([original post](https://forums.ppsspp.org/showthread.php?tid=26728&pid=137985#pid137985)) is the base
 for everything here: it was only extended, using his model and settings so the style matches.
+
+**Requires:** VC3 Extra Edition patched with the [English ReTranslation](https://github.com/akorov/VC3ReTranslation) v20260625
+([Releases](https://github.com/akorov/VC3ReTranslation/releases)), applied to your own Japanese ISO with the scripts in that repository.
 
 Forum thread: <https://forums.ppsspp.org/showthread.php?tid=26728>
 
