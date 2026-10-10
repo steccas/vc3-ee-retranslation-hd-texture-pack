@@ -59,7 +59,7 @@ into the same folder, plus `SHA256SUMS.txt` if you want to check them, then:
   Empire flags, the turn icons and a few small UI icons. They replace the AI versions.
 - **Cleaned `textures.ini`:** 591 Spanish-only entries removed, because they never trigger with the
   English ISO. The 2 Spanish entries the English version still uses are kept.
-- **Lossless PNG recompression** with oxipng. Pixels are identical and file names unchanged.
+- **Lossless PNG recompression of the whole pack, efonte's files included:** every PNG was recompressed with oxipng (`-o 4 --strip safe`, no alpha tricks). Each file was decoded before and after and checked pixel-for-pixel (RGBA): all identical, file names unchanged. The pack went from 8.37 GiB to 6.87 GiB (−18%), so it's smaller to download and store, especially on Android.
 - **Not included:** efonte's `original/` native dumps. If you want them, get them from his link in
   post #1.
 
