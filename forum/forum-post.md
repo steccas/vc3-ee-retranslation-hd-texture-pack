@@ -1,10 +1,42 @@
-**Valkyria Chronicles 3 Extra Edition: English ReTranslation-ready AI upscaled pack (based on efonte's pack)**
+![Valkyria Chronicles 3 E2 HD texture pack](https://raw.githubusercontent.com/steccas/vc3-ee-retranslation-hd-texture-pack/main/docs/img/hero_forum.jpg)
+
+## Valkyria Chronicles 3 Extra Edition: English ReTranslation-ready AI upscaled pack (based on efonte's pack)
 
 Hi everyone. This is a version of **efonte's AI upscaled pack** ([original post #1](https://forums.ppsspp.org/showthread.php?tid=26728&pid=137985#pid137985)) for VC3 Extra Edition patched with the new [English ReTranslation](https://github.com/akorov/VC3ReTranslation) by akorov. efonte's pack is the base for everything here: I only extended it, using his model and settings so the style matches.
 
-**Requires:** VC3 Extra Edition patched with the [English ReTranslation](https://github.com/akorov/VC3ReTranslation) (v20260625, from its [Releases page](https://github.com/akorov/VC3ReTranslation/releases)). The patch is applied to your own Japanese ISO with the scripts in that repository.
+**Requires:** VC3 Extra Edition patched with the [English ReTranslation](https://github.com/akorov/VC3ReTranslation) (**v20260625**, from its [Releases page](https://github.com/akorov/VC3ReTranslation/releases)). The patch is applied to your own Japanese ISO with the scripts in that repository.
 
 **efonte:** if you'd rather I didn't re-host your work, or you want something changed or merged into your pack, just tell me and I'll take it down or adjust it.
+
+![143 ReTranslation textures · 49 text/UI textures · 2,930 new textures · 6.87 GiB extracted, −18% lossless](https://raw.githubusercontent.com/steccas/vc3-ee-retranslation-hd-texture-pack/main/docs/img/stats_forum.jpg)
+
+### >> Download (v1)
+
+- **Full pack** (ready to use, includes efonte's pack): `VC3_E2_EN_texture_pack_20261002.zip`, 6.82 GiB (7,325,142,836 bytes)
+  - GitHub release (4 parts `.zip.001`–`.004`, each under 2 GiB): [https://github.com/steccas/vc3-ee-retranslation-hd-texture-pack/releases/tag/v1](https://github.com/steccas/vc3-ee-retranslation-hd-texture-pack/releases/tag/v1)
+  - Join them: on Windows open `.zip.001` with 7-Zip; on Linux/macOS `cat VC3_E2_EN_texture_pack_20261002.zip.0* > VC3_E2_EN_texture_pack_20261002.zip`. On Android, join them on a PC first.
+- **Add-on only** (needs efonte's pack): `VC3_ReTL_texture_addon.zip`, 1.22 GiB (1,310,044,070 bytes)
+  - [https://github.com/steccas/vc3-ee-retranslation-hd-texture-pack/releases/download/v1/VC3_ReTL_texture_addon.zip](https://github.com/steccas/vc3-ee-retranslation-hd-texture-pack/releases/download/v1/VC3_ReTL_texture_addon.zip)
+
+```
+SHA256
+92100028fe6589d71397402b7226a1ed2fcc4c748637062cf23095db06a1e0e9  VC3_E2_EN_texture_pack_20261002.zip
+a29f0b5b3885c97b7b46ea4d8bc31baddc3d8493722d3c540b0795be8bfa465e  VC3_ReTL_texture_addon.zip
+```
+
+---
+
+### Before / After
+
+Each image: original (what PPSSPP shows without this pack: native PSP texture, enlarged 4x with nearest-neighbor) vs this pack, same crop. More comparisons on [GitHub](https://github.com/steccas/vc3-ee-retranslation-hd-texture-pack#before--after).
+
+![Title screen: original vs HD](https://raw.githubusercontent.com/steccas/vc3-ee-retranslation-hd-texture-pack/main/docs/img/cmp-title-screen_forum.jpg)
+
+![Combat Report: original vs HD](https://raw.githubusercontent.com/steccas/vc3-ee-retranslation-hd-texture-pack/main/docs/img/cmp-combat-report_forum.jpg)
+
+![Gallian map: original vs HD](https://raw.githubusercontent.com/steccas/vc3-ee-retranslation-hd-texture-pack/main/docs/img/cmp-gallian-map_forum.jpg)
+
+![Battle portrait: original vs HD](https://raw.githubusercontent.com/steccas/vc3-ee-retranslation-hd-texture-pack/main/docs/img/cmp-portrait_forum.jpg)
 
 ---
 
@@ -31,7 +63,7 @@ Hi everyone. This is a version of **efonte's AI upscaled pack** ([original post 
 ### Install
 
 **Full pack**
-1. Extract `VC3_E2_EN_texture_pack_20261002.zip` into `PSP/TEXTURES/`. You should end up with `PSP/TEXTURES/ULJM05957/textures.ini`.
+1. Join the parts (see Download above) and extract `VC3_E2_EN_texture_pack_20261002.zip` into `PSP/TEXTURES/`. You should end up with `PSP/TEXTURES/ULJM05957/textures.ini`.
    - If you already have a `ULJM05957` folder, remove or rename it first. Don't merge the two folders.
 2. Keep the folder name **ULJM05957**: that's the disc ID of the ReTranslation ISO (Extra Edition).
 3. In PPSSPP, turn on **Settings → Tools → Developer tools → Texture replacement → Replace textures**.
@@ -43,16 +75,6 @@ Hi everyone. This is a version of **efonte's AI upscaled pack** ([original post 
 
 Tested on PPSSPP 1.20.4 on PC (Linux) and on Android (AYN Thor).
 
-### How it was made (short version, for the curious)
-
-- I didn't dump these by playing. I decrypted `DATA.BIN` (PGD → CRI CPK/CRILAYLA → GIM, plus the LZ compression inside the `.PAC` files), then computed PPSSPP's replacement keys offline (xxh64, `ignoreAddress`).
-- **Checking the keys:**
-  - Against efonte's original dumps: 6,815 textures matched pixel-for-pixel, which is 99.6% of the ones that could be checked.
-  - Against my own in-game dumps on the English ISO: 25/25.
-- **Main upscale:** `4x_fatal_Anime_500000_G_4x_FatalPixels_340000_G_interp_075`, efonte's exact model, rebuilt from the two parent models. On 150 sample textures it reproduces his output exactly.
-- **Text/UI** (the 143 + 49 textures above): `4x_foolhardy_Remacri`.
-- **Mapping check:** I compared every entry of the pack with the decoded game data (all 711 map/minimap entries included). I found no wrong mappings and no key collisions on ULJM05957.
-
 ### Known limits
 
 - **Dialogue font:** it's a runtime glyph cache, so it can't be precomputed. A texture upscaling shader in PPSSPP helps there.
@@ -62,15 +84,15 @@ Tested on PPSSPP 1.20.4 on PC (Linux) and on Android (AYN Thor).
 - **ReTranslation version:** made for v20260625. A later version that changes textures may need an update of this pack.
 - **"Area 3 instead of area 4" (post #3):** I can't reproduce it on ULJM05957. It may only affect the original release, ULJM05781. If you see it on Extra Edition, please post the texture name from "Save new textures".
 
-### Downloads
+### How it was made (short version, for the curious)
 
-- **Full pack:** `VC3_E2_EN_texture_pack_20261002.zip`, 6.82 GiB (7,325,142,836 bytes)
-  - GitHub release (4 parts `.zip.001`–`.004`, each under 2 GiB): [https://github.com/steccas/vc3-ee-retranslation-hd-texture-pack/releases/tag/v1](https://github.com/steccas/vc3-ee-retranslation-hd-texture-pack/releases/tag/v1)
-  - Join them: on Windows open `.zip.001` with 7-Zip; on Linux/macOS `cat VC3_E2_EN_texture_pack_20261002.zip.0* > VC3_E2_EN_texture_pack_20261002.zip`.
-  - SHA256: `92100028fe6589d71397402b7226a1ed2fcc4c748637062cf23095db06a1e0e9`
-- **Add-on only** (needs efonte's pack): `VC3_ReTL_texture_addon.zip`, 1.22 GiB (1,310,044,070 bytes)
-  - [https://github.com/steccas/vc3-ee-retranslation-hd-texture-pack/releases/download/v1/VC3_ReTL_texture_addon.zip](https://github.com/steccas/vc3-ee-retranslation-hd-texture-pack/releases/download/v1/VC3_ReTL_texture_addon.zip)
-  - SHA256: `a29f0b5b3885c97b7b46ea4d8bc31baddc3d8493722d3c540b0795be8bfa465e`
+- I didn't dump these by playing. I decrypted `DATA.BIN` (PGD → CRI CPK/CRILAYLA → GIM, plus the LZ compression inside the `.PAC` files), then computed PPSSPP's replacement keys offline (xxh64, `ignoreAddress`).
+- **Checking the keys:**
+  - Against efonte's original dumps: 6,815 textures matched pixel-for-pixel, which is 99.6% of the ones that could be checked.
+  - Against my own in-game dumps on the English ISO: 25/25.
+- **Main upscale:** `4x_fatal_Anime_500000_G_4x_FatalPixels_340000_G_interp_075`, efonte's exact model, rebuilt from the two parent models. On 150 sample textures it reproduces his output exactly.
+- **Text/UI** (the 143 + 49 textures above): `4x_foolhardy_Remacri`.
+- **Mapping check:** I compared every entry of the pack with the decoded game data (all 711 map/minimap entries included). I found no wrong mappings and no key collisions on ULJM05957.
 
 ### License
 
@@ -93,7 +115,9 @@ Tested on PPSSPP 1.20.4 on PC (Linux) and on Android (AYN Thor).
 - **PPSSPP (hrydgard and contributors):** the emulator, its texture replacement code, and the libkirk code used for PGD decryption.
 - **unknownbrackets:** the [VC3 file formats notes](https://gist.github.com/unknownbrackets/78c4631a4091044d381432ffb7f1bae4).
 
-The extraction and hashing tools and the scripts were written with the help of an AI assistant (Claude). Everything was checked against real dumps.
+Full credits (libkirk authors, file-format and tool authors): [CREDITS.md on GitHub](https://github.com/steccas/vc3-ee-retranslation-hd-texture-pack/blob/main/CREDITS.md).
+
+*The extraction and hashing tools and the scripts were written with the help of an AI assistant (Claude). Everything was checked against real dumps.*
 
 ### Source and tools
 
