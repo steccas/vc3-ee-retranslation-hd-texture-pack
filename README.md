@@ -10,7 +10,7 @@
 [![Downloads](https://img.shields.io/github/downloads/steccas/vc3-ee-retranslation-hd-texture-pack/total?style=flat-square&label=downloads&color=e8b64c)](https://github.com/steccas/vc3-ee-retranslation-hd-texture-pack/releases)
 [![Textures: CC BY-NC-SA 4.0](https://img.shields.io/badge/textures-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square)](LICENSE)
 [![Tools: GPL-3.0](https://img.shields.io/badge/tools-GPL--3.0-blue?style=flat-square)](tools/LICENSE)
-[![PPSSPP 1.20+](https://img.shields.io/badge/PPSSPP-1.20%2B-2b6cb0?style=flat-square)](https://www.ppsspp.org/)
+[![Tested on PPSSPP 1.20.4](https://img.shields.io/badge/tested%20on-PPSSPP%201.20.4-2b6cb0?style=flat-square)](https://www.ppsspp.org/)
 [![Platform: PC | Android](https://img.shields.io/badge/platform-PC%20%7C%20Android-555?style=flat-square)](#install)
 
 ### [⬇ Download v1](https://github.com/steccas/vc3-ee-retranslation-hd-texture-pack/releases/tag/v1) · [Before / After](#before--after) · [Install](#install) · [Forum thread](https://forums.ppsspp.org/showthread.php?tid=26728)
