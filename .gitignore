@@ -29,5 +29,5 @@ tools/upscale/validation/index.json
 tools/upscale/validation/e2e/
 tools/upscale/validation/*.csv
 
-# private drafts
-forum/msg-efonte.txt
+# local drafts (forum post, private messages)
+forum/
